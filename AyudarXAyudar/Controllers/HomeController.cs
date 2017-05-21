@@ -24,5 +24,21 @@ namespace AyudarXAyudar.Controllers
         {
            return View();
         }
+
+        public ActionResult English()
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
+            Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentUICulture;
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        public ActionResult Espanol()
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("es");
+            Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentUICulture;
+
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
