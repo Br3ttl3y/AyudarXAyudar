@@ -1,4 +1,4 @@
-﻿@using Microsoft.AspNet.Identity
+﻿@using AyudarXAyudar.Views.Shared.Resources
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
@@ -11,7 +11,7 @@
             @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
         </li>*@
         <li>
-            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+            <a href="javascript:document.getElementById('logoutForm').submit()">@_LoginPartial.LogOff</a>
         </li>
     </ul>
     }
@@ -21,7 +21,7 @@ else
     <ul class="nav navbar-nav navbar-right">
         @*We only want administrators to be able to log in, we created their accounts already*@
         @*<li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
-        <li>@Html.ActionLink("Admin", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        <li>@Html.ActionLink(_LoginPartial.Admin, "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
         
     </ul>
 }

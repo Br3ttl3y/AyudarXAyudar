@@ -1,7 +1,8 @@
 ﻿@using AyudarXAyudar.Models
+@using AyudarXAyudar.Views.Account.Resources
 @model LoginViewModel
 @{
-    ViewBag.Title = "Administrator Login";
+    ViewBag.Title = Login.Title;
 }
 
 <h2>@ViewBag.Title.</h2>
@@ -36,7 +37,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Log in" class="btn btn-default" />
+                        <input type="submit" value="@Login.LoginButton" class="btn btn-default" />
                     </div>
                 </div>
                 //No new users yet, just admin

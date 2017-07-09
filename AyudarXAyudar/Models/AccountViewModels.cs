@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using AyudarXAyudar.Models.Resources;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace AyudarXAyudar.Models
@@ -48,17 +49,22 @@ namespace AyudarXAyudar.Models
 
     public class LoginViewModel
     {
-        [Required]
-        [Display(Name = "Email")]
+        [Required(ErrorMessageResourceType = typeof(AccountViewModels), 
+            ErrorMessageResourceName = "LoginViewModel_EmailValidation")]
+        [Display(Order = 0, ResourceType = typeof(AccountViewModels), 
+            Name = "LoginViewModel_Email")]
         [EmailAddress]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessageResourceType = typeof(AccountViewModels), 
+            ErrorMessageResourceName = "LoginViewModel_PasswordValidation")]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Order = 0, ResourceType = typeof(AccountViewModels), 
+            Name = "LoginViewModel_Password")]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Order = 0, ResourceType = typeof(AccountViewModels), 
+            Name = "LoginViewModel_RememberMe")]
         public bool RememberMe { get; set; }
     }
 
