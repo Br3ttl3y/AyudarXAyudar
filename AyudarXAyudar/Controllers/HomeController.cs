@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AyudarXAyudar.App_Code;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Web.Mvc;
 
 namespace AyudarXAyudar.Controllers
 {
+    [Localization]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -23,22 +25,6 @@ namespace AyudarXAyudar.Controllers
         public ActionResult Contact()
         {
            return View();
-        }
-
-        public ActionResult English()
-        {
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
-            Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentUICulture;
-
-            return RedirectToAction("Index", "Home");
-        }
-
-        public ActionResult Espanol()
-        {
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("es");
-            Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentUICulture;
-
-            return RedirectToAction("Index", "Home");
         }
     }
 }

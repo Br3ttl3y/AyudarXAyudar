@@ -10,10 +10,10 @@
 </style>
 
 <div class="">
-    <a href="@Url.Action("English", "Home")">
+    <a href="@Url.Action("Index", "Home", new { lang = "en"})">
         <img class="navbar-right languageIcon" src="@Url.Content("~/Content/Images/usFlag.png")" />
     </a>
-    <a href="@Url.Action("Espanol", "Home")">
+    <a href="@Url.Action("Index", "Home", new { lang = "es" })">
         <img class="navbar-right languageIcon" src="@Url.Content("~/Content/Images/mxFlag.png")" />
     </a>
 </div>

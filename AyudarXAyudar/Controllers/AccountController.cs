@@ -9,9 +9,11 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using AyudarXAyudar.Models;
+using AyudarXAyudar.App_Code;
 
 namespace AyudarXAyudar.Controllers
 {
+    [Localization]
     [Authorize]
     public class AccountController : Controller
     {
