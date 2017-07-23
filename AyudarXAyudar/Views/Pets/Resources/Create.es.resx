@@ -120,10 +120,22 @@
   <data name="BackToList" xml:space="preserve">
     <value>Regresar a la lista</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
   <data name="FormTitle" xml:space="preserve">
     <value>Ojo Derecho</value>
   </data>
+  <data name="PicturePlaceholder" xml:space="preserve">
+    <value>Imagen de Mascota</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Crear</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Cargar</value>
+  </data>
+  <data name="UploadPhoto" xml:space="preserve">
+    <value>Cargas un foto.</value>
   </data>
 </root>

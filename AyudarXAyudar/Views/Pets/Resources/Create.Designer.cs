@@ -70,6 +70,15 @@ namespace AyudarXAyudar.Views.Pets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pet.
         /// </summary>
         public static string FormTitle {
@@ -79,11 +88,38 @@ namespace AyudarXAyudar.Views.Pets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pet Image.
+        /// </summary>
+        public static string PicturePlaceholder {
+            get {
+                return ResourceManager.GetString("PicturePlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         public static string Title {
             get {
                 return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upload.
+        /// </summary>
+        public static string Upload {
+            get {
+                return ResourceManager.GetString("Upload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upload a photo.
+        /// </summary>
+        public static string UploadPhoto {
+            get {
+                return ResourceManager.GetString("UploadPhoto", resourceCulture);
             }
         }
     }

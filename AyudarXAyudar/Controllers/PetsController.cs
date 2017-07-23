@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using AyudarXAyudar.App_Code;
+using AyudarXAyudar.Models;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using AyudarXAyudar.Models;
-using AyudarXAyudar.App_Code;
 
 namespace AyudarXAyudar.Controllers
 {
@@ -43,22 +40,40 @@ namespace AyudarXAyudar.Controllers
             return View();
         }
 
-        // POST: Pets/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,PictureUrl,Description")] Pet pet)
+        public ActionResult Create([Bind(Include = "Id,Name,PictureUrl,Description")]
+            Pet pet,
+            HttpPostedFileBase uploadFile)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && uploadFile != null)
             {
+                int? maxPetId = GetMaxPetId() + 1;
+                pet.Id = maxPetId ?? 0;
+
+                string fileName = uploadFile.FileName;
+
+                PetImageManager managePetImages =
+                    new PetImageManager(ControllerContext, pet);
+                managePetImages.DeleteExistingPetImages();
+
+                string petIdImagePath =
+                    managePetImages.GetServerImageFilePath(fileName);
+                uploadFile.SaveAs(petIdImagePath);
+
+                pet.PictureUrl =
+                    managePetImages.GetUrlContentFilePath(fileName);
+
                 db.Pets.Add(pet);
                 db.SaveChanges();
-                return RedirectToAction("Index");
             }
 
-            return View(pet);
+            return RedirectToAction("Index");
         }
+
+
+
+
 
         // GET: Pets/Edit/5
         public ActionResult Edit(int? id)
@@ -115,6 +130,11 @@ namespace AyudarXAyudar.Controllers
             db.Pets.Remove(pet);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        private int? GetMaxPetId()
+        {
+            return db.Pets.Max(p => (int?)p.Id);
         }
 
         protected override void Dispose(bool disposing)

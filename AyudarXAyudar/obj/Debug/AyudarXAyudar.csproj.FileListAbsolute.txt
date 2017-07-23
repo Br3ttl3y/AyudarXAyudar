@@ -159,7 +159,6 @@ C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\bin\Microsoft.Owin.Security.O
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.csprojResolveAssemblyReference.cache
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.csproj.GenerateResource.Cache
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.dll
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.pdb
@@ -288,3 +287,15 @@ C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Pets.Resources.Index.es.resources
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Shared.Resources._Layout.resources
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Shared.Resources._Layout.es.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Home.Resources.Index.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Models.Resources.AccountViewModels.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Account.Resources.Login.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Models.Resources.AccountViewModels.es.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Account.Resources.Login.es.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Shared.Resources._LoginPartial.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Shared.Resources._LoginPartial.es.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Pets.Resources.Create.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Pets.Resources.Create.es.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Models.Resources.PetStrings.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Models.Resources.PetStrings.es.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.csprojResolveAssemblyReference.cache
