@@ -48,19 +48,22 @@ namespace AyudarXAyudar.Controllers
         {
             if (ModelState.IsValid && uploadFile != null)
             {
-                int? maxPetId = GetMaxPetId() + 1;
-                pet.Id = maxPetId ?? 0;
+                // imagefile name needs id before pet has Id
+                pet.Id = GetNewPetId();
 
-                string fileName = uploadFile.FileName;
-
+                // only one image, needs to be unique.
                 PetImageManager managePetImages =
                     new PetImageManager(ControllerContext, pet);
                 managePetImages.DeleteExistingPetImages();
 
+                string fileName = uploadFile.FileName;
+
+                // unique image named after Id
                 string petIdImagePath =
                     managePetImages.GetServerImageFilePath(fileName);
                 uploadFile.SaveAs(petIdImagePath);
 
+                // UrlContent uses relative path of model.
                 pet.PictureUrl =
                     managePetImages.GetUrlContentFilePath(fileName);
 
@@ -71,10 +74,6 @@ namespace AyudarXAyudar.Controllers
             return RedirectToAction("Index");
         }
 
-
-
-
-
         // GET: Pets/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -82,11 +81,13 @@ namespace AyudarXAyudar.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             Pet pet = db.Pets.Find(id);
             if (pet == null)
             {
                 return HttpNotFound();
             }
+
             return View(pet);
         }
 
@@ -132,9 +133,10 @@ namespace AyudarXAyudar.Controllers
             return RedirectToAction("Index");
         }
 
-        private int? GetMaxPetId()
+        private int GetNewPetId()
         {
-            return db.Pets.Max(p => (int?)p.Id);
+            int? maxPetId = db.Pets.Max(p => (int?)p.Id);
+            return maxPetId ?? 0;
         }
 
         protected override void Dispose(bool disposing)
