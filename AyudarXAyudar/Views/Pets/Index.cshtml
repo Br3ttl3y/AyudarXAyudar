@@ -17,16 +17,16 @@
 </p>
 <table class="table">
     <tr>
-        <th>
+        <th width="10%">
             @Index.Name
         </th>
-        <th>
+        <th width="25%">
             @Index.Picture
         </th>
-        <th>
+        <th width="25%">
             @Index.Description
         </th>
-        <th></th>
+        <th width="15%"></th>
     </tr>
 
 @foreach (var item in Model) {
@@ -35,7 +35,7 @@
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            <img src="@Url.Content(item.PictureUrl)" alt="pic" style="width:30%"/>
+            <img src="@Url.Content(item.PictureUrl)" alt="pic" class="img-thumbnail"/>
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Description)
@@ -44,7 +44,9 @@
             @if (Request.IsAuthenticated)
             {
                 @Html.ActionLink(Index.Edit, "Edit", new { id = item.Id });
+                @Html.Raw(" | "); 
                 @Html.ActionLink(Index.Details, "Details", new { id = item.Id });
+                @Html.Raw(" | ");
                 @Html.ActionLink(Index.Delete, "Delete", new { id = item.Id });
             }
         </td>

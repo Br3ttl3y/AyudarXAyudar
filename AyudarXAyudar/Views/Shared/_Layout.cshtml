@@ -9,15 +9,11 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div id="navigation" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Ayudar✕Ayudar", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Ayudar✕Ayudar", "Index", "Home", 
+                    new { area = "" }, new { @class = "navbar-brand" })
             </div>
 
             <div class="navbar-collapse collapse">
@@ -26,13 +22,17 @@
                     <li>@Html.ActionLink(_Layout.About, "About", "Home")</li>
                     <li>@Html.ActionLink(_Layout.Contact, "Contact", "Home")</li>
                 </ul>
-                @Html.Partial("_LanguageParital")
-                @Html.Partial("_LoginPartial")
+                <div>
+                    @Html.Partial("_LoginPartial")
+                </div>
+                <div>
+                    @Html.Partial("_LanguageParital")
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container body-content">
+    <div id="body" class="container body-content">
         @RenderBody()
         <hr />
         <footer>

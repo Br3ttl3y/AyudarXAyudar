@@ -42,8 +42,8 @@ namespace AyudarXAyudar.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,PictureUrl,Description")]
-            Pet pet,
+        public ActionResult Create(
+            [Bind(Include = "Id,Name,PictureUrl,Description")] Pet pet,
             HttpPostedFileBase uploadFile)
         {
             if (ModelState.IsValid && uploadFile != null)
@@ -51,21 +51,7 @@ namespace AyudarXAyudar.Controllers
                 // imagefile name needs id before pet has Id
                 pet.Id = GetNewPetId();
 
-                // only one image, needs to be unique.
-                PetImageManager managePetImages =
-                    new PetImageManager(ControllerContext, pet);
-                managePetImages.DeleteExistingPetImages();
-
-                string fileName = uploadFile.FileName;
-
-                // unique image named after Id
-                string petIdImagePath =
-                    managePetImages.GetServerImageFilePath(fileName);
-                uploadFile.SaveAs(petIdImagePath);
-
-                // UrlContent uses relative path of model.
-                pet.PictureUrl =
-                    managePetImages.GetUrlContentFilePath(fileName);
+                SavePetImage(pet, uploadFile);
 
                 db.Pets.Add(pet);
                 db.SaveChanges();
@@ -96,10 +82,14 @@ namespace AyudarXAyudar.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,PictureUrl,Description")] Pet pet)
+        public ActionResult Edit(
+            [Bind(Include = "Id,Name,PictureUrl,Description")] Pet pet,
+            HttpPostedFileBase uploadFile)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && uploadFile != null)
             {
+                SavePetImage(pet, uploadFile);
+
                 db.Entry(pet).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -137,6 +127,21 @@ namespace AyudarXAyudar.Controllers
         {
             int? maxPetId = db.Pets.Max(p => (int?)p.Id);
             return maxPetId ?? 0;
+        }
+
+        private void SavePetImage(Pet pet, HttpPostedFileBase uploadFIle)
+        {
+            PetImageManager managePetImages =
+                new PetImageManager(ControllerContext, pet);
+            managePetImages.DeleteExistingPetImages();
+
+            string fileName = uploadFIle.FileName;
+
+            string petIdImagePath =
+                managePetImages.GetServerImageFilePath(fileName);
+            uploadFIle.SaveAs(petIdImagePath);
+
+            pet.PictureUrl = managePetImages.GetUrlContentFilePath(fileName);
         }
 
         protected override void Dispose(bool disposing)

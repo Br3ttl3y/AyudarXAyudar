@@ -299,3 +299,7 @@ C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Models.Resources.PetStrings.resources
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Models.Resources.PetStrings.es.resources
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.csprojResolveAssemblyReference.cache
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Pets.Resources.Edit.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Pets.Resources.Edit.es.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Pets.Resources.Details.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Pets.Resources.Details.es.resources

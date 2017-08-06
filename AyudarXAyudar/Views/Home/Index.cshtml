@@ -11,53 +11,7 @@
         @Index.SubTitle
     </p>
     <p>
-        <a href="http://asp.net" class="btn btn-primary btn-lg">
-            @Index.LearnMore &raquo;
-        </a>
+        @Html.ActionLink(@Index.LearnMore + " »", "Index", "Pets", 
+            new { @class = "btn btn-primary btn-lg" })
     </p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>
-            @Index.GettingStarted
-        </h2>
-        <p>
-            @Index.GettingStartedText
-        </p>
-        <p>
-            <a class="btn btn-default" 
-               href="http://go.microsoft.com/fwlink/?LinkId=301865">
-                @Index.LearnMore &raquo;
-            </a>
-        </p>
-    </div>
-    <div class="col-md-4">
-        <h2>
-            @Index.GetMoreLibs
-        </h2>
-        <p>
-            @Index.GetMoreLibsText
-        </p>
-        <p>
-            <a class="btn btn-default" 
-               href="http://go.microsoft.com/fwlink/?LinkId=301866">
-                @Index.LearnMore &raquo;
-            </a>
-        </p>
-    </div>
-    <div class="col-md-4">
-        <h2>
-            @Index.WebHosting
-        </h2>
-        <p>
-            @Index.WebHostingText
-        </p>
-        <p>
-            <a class="btn btn-default" 
-               href="http://go.microsoft.com/fwlink/?LinkId=301867">
-                @Index.LearnMore &raquo;
-            </a>
-        </p>
-    </div>
 </div>
