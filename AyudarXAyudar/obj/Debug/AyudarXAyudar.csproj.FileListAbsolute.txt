@@ -303,3 +303,5 @@ C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Pets.Resources.Edit.es.resources
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Pets.Resources.Details.resources
 C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Pets.Resources.Details.es.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Home.Resources.Contact.resources
+C:\Users\brett\Code\C#\AyudarXAyudar\AyudarXAyudar\obj\Debug\AyudarXAyudar.Views.Home.Resources.Contact.es.resources

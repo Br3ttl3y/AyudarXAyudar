@@ -246,6 +246,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>About.es.resx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Home\Resources\Contact.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contact.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\Resources\Contact.es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contact.es.resx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Home\Resources\Index.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -354,6 +364,14 @@
     <EmbeddedResource Include="Views\Account\Resources\Login.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Login.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Home\Resources\Contact.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Contact.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Home\Resources\Contact.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Contact.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Home\Resources\Index.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

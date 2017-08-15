@@ -1,17 +1,18 @@
-﻿@{
-    ViewBag.Title = "Contact";
+﻿@using AyudarXAyudar.Views.Home.Resources
+@{
+    ViewBag.Title = @Contact.Title;
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2>@Contact.Title</h2>
+<h3>@Contact.Message</h3>
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
+    Ayudar X Ayudar<br />
+    Matamoros, Tamaulipas @Contact.Mexico<br />
+    <abbr title="@Contact.Phone">@Contact.PhoneAbbr</abbr>
+    (+52) 868 831 2425
 </address>
 
 <address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    <strong>@Contact.Email:</strong> <a href="mailto:ayudarxayudar.rescatistasunidos@hotmail.com">ayudarxayudar.rescatistasunidos@hotmail.com</a><br />
+    <strong>Facebook:</strong> <a href="https://www.facebook.com/unidosrescatistas">https://www.facebook.com/unidosrescatistas</a>
 </address>

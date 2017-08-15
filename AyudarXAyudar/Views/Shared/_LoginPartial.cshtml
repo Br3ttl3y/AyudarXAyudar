@@ -23,15 +23,14 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        @*We only want administrators to be able to log in, we created their accounts already*@
-        @*
+        @*Do not allow people to register, only use one account as admin.
         <li>
-            @Html.ActionLink("Register", "Register", "Account",
-                routeValues: null, htmlAttributes: new { id = "registerLink" })
+            @Html.ActionLink("Register", "Register", "Account", null, 
+                new { id = "registerLink" })
         </li>*@
         <li>
-            @Html.ActionLink(_LoginPartial.Admin, "Login", "Account",
-            routeValues: null, htmlAttributes: new { id = "loginLink" })
+            @Html.ActionLink(_LoginPartial.Admin, "Login", "Account", null, 
+                new { id = "loginLink" })
         </li>
     </ul>
 }
