@@ -117,13 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="description" xml:space="preserve">
+  <data name="Description" xml:space="preserve">
     <value>Su página de descripción de la aplicación.</value>
   </data>
-  <data name="message" xml:space="preserve">
-    <value>Utilice esta área para proporcionar información adicional.</value>
+  <data name="HardWork" xml:space="preserve">
+    <value>Para sostener este refugio tenemos que trabajar arduamente todos los días, no hay descanso, hacemos actividades con las que recaudamos fondos, eso si hay muchas caritas felices que compensan el sacrificio que hacemos. 
+También nos apoyamos con donativos económicos, alimento, artículos de limpieza, materiales para habilitar el refugio de personas que como nosotros aman a los animales y ponen su granito de arena a nuestra causa. 
+En este trayecto ha habido altas y bajas, algunos peludos han cruzado el arcoiris, a otros los hemos ayudado a irse para que no sigan sufriendo.
+Han sido momentos dolorosos, pero también muy gratificantes al ver a tantos peludos disfrutar de un nuevo hogar junto a una familia que los ame y cuide. 
+Ese es nuestro objetivo: rescatar, curar, y encontrarles un hogar.</value>
   </data>
-  <data name="title" xml:space="preserve">
+  <data name="Information" xml:space="preserve">
+    <value>Así tuvimos que rentar una casa sin luz, ni agua, fue así como logramos mantenerlos seguros. 
+A través del tiempo personas se unieron a nuestra causa pero no fueron constantes y se rindieron. 
+Nosotros continuamos y después de algunos años nos prestaron un terreno que con mucho esfuerzo hemos ido habilitando y que aún falta mucho por la escasez de recursos. 
+Se ha convertido en un paraíso para ellos.</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>Hace 5 años empezamos rescatando perros en la Playa Bagdad, animales que eran abandonados a su suerte. 
+Los llevábamos a nuestra casa e improvisábamos casitas con lonas y cartones como podíamos para protegerlos. 
+Los vecinos nos prestaban pasillos con techo para protegerlos pues ya nuestra casa no era suficiente. 
+Habíamos rescatado a muchos por lo que el lugar era insuficiente.</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Ayudar X Ayudar Rescatistas Unidos.</value>
+  </data>
+  <data name="Mission" xml:space="preserve">
+    <value>Nuestra misión: que no haya animales deambulando por las calles a su suerte, sorteando tantos peligros y ayudarlos a encontrar una familia. 
+Todos los peludos que llegan al refugio son atendidos por un veterinario.
+Se les aplican sus vacunas. 
+Se les desparasita. 
+Se les da tratamiento en caso que así lo requieran.  
+Se les opera si necesitan cirugía.  
+Se les rehabilitada.
+Se esterilizan y solo así están listos para adopción. 
+Cuando es necesario se les hace la prueba del gusano del corazón, y se les aplica la vacuna bordetela. 
+Todo esto cuesta mucho dinero, por lo que siempre estamos necesitados de ayuda.</value>
+  </data>
+  <data name="RequirementFive" xml:space="preserve">
+    <value>firmar un convenio donde se compromete y se hace responsable de la mascota desde que es entregado en su casa, previa revisión de las condiciones del domicilio.</value>
+  </data>
+  <data name="RequirementFour" xml:space="preserve">
+    <value>tenerlos al día en vacunas y desparasitacion</value>
+  </data>
+  <data name="RequirementOne" xml:space="preserve">
+    <value>Primero que nada amor por los animales,</value>
+  </data>
+  <data name="RequirementsLastly" xml:space="preserve">
+    <value>Se harán visitas posteriores eventualmente para verificar el bienestar del animal adoptado</value>
+  </data>
+  <data name="RequirementsTitle" xml:space="preserve">
+    <value>Requisitos para adopción:</value>
+  </data>
+  <data name="RequirementThree" xml:space="preserve">
+    <value>tener resguardo para protegerlos de las inclemencias del tiempo, no tenerlos amarrados, encerrados o en la azotea</value>
+  </data>
+  <data name="RequirementTwo" xml:space="preserve">
+    <value>tener un terreno o patio bardeado</value>
+  </data>
+  <data name="Title" xml:space="preserve">
     <value>Acerca</value>
   </data>
 </root>

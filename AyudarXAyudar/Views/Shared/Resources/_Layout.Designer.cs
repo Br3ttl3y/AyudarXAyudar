@@ -70,7 +70,7 @@ namespace AyudarXAyudar.Views.Shared.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Animals.
+        ///   Looks up a localized string similar to Pets.
         /// </summary>
         public static string Animals {
             get {

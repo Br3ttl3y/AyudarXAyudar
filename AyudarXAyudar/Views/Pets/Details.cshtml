@@ -1,15 +1,15 @@
-﻿@model AyudarXAyudar.Models.Pet
+﻿@using AyudarXAyudar.Views.Pets.Resources
+@model AyudarXAyudar.Models.Pet
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = @Details.Title;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>@Details.Title</h2>
+<hr />
 
 <div>
-    <h4>Pet</h4>
-    <hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Name)
@@ -24,7 +24,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.PictureUrl)
+            <img src="@Url.Content(Model.PictureUrl)" alt="pic" class="img-thumbnail"/>        
         </dd>
 
         <dt>
@@ -34,10 +34,9 @@
         <dd>
             @Html.DisplayFor(model => model.Description)
         </dd>
-
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink(@Details.Edit, "Edit", new { id = Model.Id }) |
+    @Html.ActionLink(Details.BackToList, "Index")
 </p>

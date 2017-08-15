@@ -1,8 +1,45 @@
 ﻿@using AyudarXAyudar.Views.Home.Resources
 @{ 
-    ViewBag.Title = About.title;
+    ViewBag.Title = About.Title;
 }
-<h2>@About.title</h2>
-<h3>@About.message</h3>
+<h2>
+    @About.Title
+</h2>
+<h3>
+    @About.Message
+</h3>
 
-<p>@About.description</p>
+<p>
+    @About.Intro
+</p>
+<p>
+    @About.Information
+</p>
+<p>
+    @About.HardWork
+</p>
+<p>
+    @About.Mission
+</p>
+
+<p>
+    @About.RequirementsTitle
+    <ul>
+        <li>
+            @About.RequirementOne
+        </li>
+        <li>
+            @About.RequirementTwo
+        </li>
+        <li>
+            @About.RequirementThree
+        </li>
+        <li>
+            @About.RequirementFour
+        </li>
+        <li>
+            @About.RequirementFive
+        </li>
+    </ul>
+    @About.RequirementsLastly
+</p>

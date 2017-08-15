@@ -11,7 +11,8 @@
         @Index.SubTitle
     </p>
     <p>
-        @Html.ActionLink(@Index.LearnMore + " »", "Index", "Pets", 
-            new { @class = "btn btn-primary btn-lg" })
+        <a href="@Url.Action("Index", "Pets")" class="btn btn-primary btn-lg">
+            @Index.LearnMore »
+        </a>
     </p>
 </div>

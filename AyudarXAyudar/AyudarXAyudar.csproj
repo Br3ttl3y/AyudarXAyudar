@@ -261,6 +261,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Create.resx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pets\Resources\Details.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Details.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pets\Resources\Details.es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Details.es.resx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pets\Resources\Edit.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -353,6 +363,14 @@
     <EmbeddedResource Include="Views\Pets\Resources\Create.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Create.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pets\Resources\Details.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Details.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pets\Resources\Details.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Details.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Pets\Resources\Edit.es.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

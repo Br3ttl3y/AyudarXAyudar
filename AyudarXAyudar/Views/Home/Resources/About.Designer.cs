@@ -63,27 +63,142 @@ namespace AyudarXAyudar.Views.Home.Resources {
         /// <summary>
         ///   Looks up a localized string similar to This is where you type something about your site..
         /// </summary>
-        public static string description {
+        public static string Description {
             get {
-                return ResourceManager.GetString("description", resourceCulture);
+                return ResourceManager.GetString("Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is the about page..
+        ///   Looks up a localized string similar to To sustain this shelter we have to work hard every day, there is no rest and we do fund-raisers. Oh, if there many happy little faces, that makes up for our sacrifice. 
+        ///We also have the support of economic donations, food, cleaning supplies, building materials to rennovate the refuge from people who, like us, love animals and pitch in for our cause.
+        ///In this journey there have been ups and downs, some furballs have gone over the rainbow bridge, volunteer vets have helped them to leave so they do not contin [rest of string was truncated]&quot;;.
         /// </summary>
-        public static string message {
+        public static string HardWork {
             get {
-                return ResourceManager.GetString("message", resourceCulture);
+                return ResourceManager.GetString("HardWork", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to So we had to rent a house without light, nor water, and that was how we managed to keep them secure. 
+        ///Over time people joined our cause but they were not constant and gave up. 
+        ///We continue and after some years we have been lent some land and with much effort we have rennovated and we still have much to do with scarce resources. 
+        ///It has become a paradise for them..
+        /// </summary>
+        public static string Information {
+            get {
+                return ResourceManager.GetString("Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Five years ago we started rescuing dogs on Baghdad Beach, animals that were abandoned to their fate. 
+        ///We would take them to our house and improvise shelters with canvas and cardboard so we could to protect them. 
+        ///The neighbors would lend us their covered yard to protect them because our house was not big enough.  
+        ///We had rescued so many that the place was insufficient..
+        /// </summary>
+        public static string Intro {
+            get {
+                return ResourceManager.GetString("Intro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ayudar X Ayudar Rescatistas Unidos..
+        /// </summary>
+        public static string Message {
+            get {
+                return ResourceManager.GetString("Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Our mission: that there are no animals wandering the streets left to their fate, gambling with danger and help them to find a family. 
+        ///All the furballs who arrive at the shelter are taken care of by a veterinarian. 
+        ///They are given their vaccines. 
+        ///They are dewormed.
+        ///They are given treatment if required.
+        ///They are operated on if they need surgery.
+        ///They are rehabilitated.
+        ///They are sterilized and only then are ready for adoption. 
+        ///When necessary, they are tested for the heartworm, and given the Bordetel [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Mission {
+            get {
+                return ResourceManager.GetString("Mission", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign an agreement where you agree and take responsibility for the pet from the moment it is delivered to your home, after reviewing your home&apos;s conditions..
+        /// </summary>
+        public static string RequirementFive {
+            get {
+                return ResourceManager.GetString("RequirementFive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keep them up to date on vaccines and dewormed,.
+        /// </summary>
+        public static string RequirementFour {
+            get {
+                return ResourceManager.GetString("RequirementFour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First of all, love for animals.
+        /// </summary>
+        public static string RequirementOne {
+            get {
+                return ResourceManager.GetString("RequirementOne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Further visits will be made eventually to verify the welfare of the adopted animal..
+        /// </summary>
+        public static string RequirementsLastly {
+            get {
+                return ResourceManager.GetString("RequirementsLastly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Requirements for adoption:.
+        /// </summary>
+        public static string RequirementsTitle {
+            get {
+                return ResourceManager.GetString("RequirementsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Have shelter to protect them from the weather, not have them tied up, locked up or on the roof.
+        /// </summary>
+        public static string RequirementThree {
+            get {
+                return ResourceManager.GetString("RequirementThree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Have a fenced lawn or patio.
+        /// </summary>
+        public static string RequirementTwo {
+            get {
+                return ResourceManager.GetString("RequirementTwo", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to About.
         /// </summary>
-        public static string title {
+        public static string Title {
             get {
-                return ResourceManager.GetString("title", resourceCulture);
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

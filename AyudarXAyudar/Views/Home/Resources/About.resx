@@ -117,13 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="description" xml:space="preserve">
+  <data name="Description" xml:space="preserve">
     <value>This is where you type something about your site.</value>
   </data>
-  <data name="message" xml:space="preserve">
-    <value>This is the about page.</value>
+  <data name="HardWork" xml:space="preserve">
+    <value>To sustain this shelter we have to work hard every day, there is no rest and we do fund-raisers. Oh, if there many happy little faces, that makes up for our sacrifice. 
+We also have the support of economic donations, food, cleaning supplies, building materials to rennovate the refuge from people who, like us, love animals and pitch in for our cause.
+In this journey there have been ups and downs, some furballs have gone over the rainbow bridge, volunteer vets have helped them to leave so they do not continue suffering. 
+There have been painful moments, but it's also very gratifying to see so many furballs enjoy a new home next to a family that loves and cares for them. 
+This is our objective: rescue, cure, and find them a home.</value>
   </data>
-  <data name="title" xml:space="preserve">
+  <data name="Information" xml:space="preserve">
+    <value>So we had to rent a house without light, nor water, and that was how we managed to keep them secure. 
+Over time people joined our cause but they were not constant and gave up. 
+We continue and after some years we have been lent some land and with much effort we have rennovated and we still have much to do with scarce resources. 
+It has become a paradise for them.</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>Five years ago we started rescuing dogs on Baghdad Beach, animals that were abandoned to their fate. 
+We would take them to our house and improvise shelters with canvas and cardboard so we could to protect them. 
+The neighbors would lend us their covered yard to protect them because our house was not big enough.  
+We had rescued so many that the place was insufficient.</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Ayudar X Ayudar Rescatistas Unidos.</value>
+  </data>
+  <data name="Mission" xml:space="preserve">
+    <value>Our mission: that there are no animals wandering the streets left to their fate, gambling with danger and help them to find a family. 
+All the furballs who arrive at the shelter are taken care of by a veterinarian. 
+They are given their vaccines. 
+They are dewormed.
+They are given treatment if required.
+They are operated on if they need surgery.
+They are rehabilitated.
+They are sterilized and only then are ready for adoption. 
+When necessary, they are tested for the heartworm, and given the Bordetella vaccine. 
+All this costs a lot of money, so we are always in need of help.</value>
+  </data>
+  <data name="RequirementFive" xml:space="preserve">
+    <value>Sign an agreement where you agree and take responsibility for the pet from the moment it is delivered to your home, after reviewing your home's conditions.</value>
+  </data>
+  <data name="RequirementFour" xml:space="preserve">
+    <value>Keep them up to date on vaccines and dewormed,</value>
+  </data>
+  <data name="RequirementOne" xml:space="preserve">
+    <value>First of all, love for animals</value>
+  </data>
+  <data name="RequirementsLastly" xml:space="preserve">
+    <value>Further visits will be made eventually to verify the welfare of the adopted animal.</value>
+  </data>
+  <data name="RequirementsTitle" xml:space="preserve">
+    <value>Requirements for adoption:</value>
+  </data>
+  <data name="RequirementThree" xml:space="preserve">
+    <value>Have shelter to protect them from the weather, not have them tied up, locked up or on the roof</value>
+  </data>
+  <data name="RequirementTwo" xml:space="preserve">
+    <value>Have a fenced lawn or patio</value>
+  </data>
+  <data name="Title" xml:space="preserve">
     <value>About</value>
   </data>
 </root>

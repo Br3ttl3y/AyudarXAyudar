@@ -124,7 +124,7 @@ namespace AyudarXAyudar.Views.Pets.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Animals.
+        ///   Looks up a localized string similar to Pets.
         /// </summary>
         public static string Title {
             get {
